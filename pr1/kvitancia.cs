@@ -21,7 +21,19 @@ namespace pr1
         this.Data = data;
         this.Summa = summa;
     }
-
-}
+        public void Print()
+        {
+            Console.WriteLine("Номер" + " " + Nomer + " " + "Дата" + " " + Data + " " + "Сумма" + " " + Summa);
+        }
+        public void Input()
+        {
+            Console.WriteLine("Номер: ");
+            this.Nomer = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Дата: ");
+            this.Data = Console.ReadLine();
+            Console.WriteLine("Сумма: ");
+            this.Summa = Convert.ToInt32(Console.ReadLine());
+        }
+    }
 }
 
